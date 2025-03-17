@@ -1,1 +1,3 @@
-# Hasil-Belajar---24200007
+HTML (Hyper Text Markup Language) adalah bahasa markup standar untuk membantu dalam pemnbuatan website, HTML menggambarkan struktur halaman web dan punya serangkaian elemen HTML yang bertujuan memberitahu browser cara untuk menampilkan konten.
+Elemen HTML adalah tag awal, beberapa konten dan tag akhir. Tidak semua elemen memiliki konten, ada yang disebut elemen kosong atau elemen yang tidak memiliki tag penutup seperti elemen (<br>). 
+Chrome, Edge, Firefox dan Safari adalah web browser untuk membaca dokumen HTML dan menampilkannya dengan benar. Browser bukan untuk menampilkan tag HTML, tetapi digunakan untuk menentukan cara menampilkan dokumen.
