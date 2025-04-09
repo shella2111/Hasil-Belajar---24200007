@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    
+    <style>
+        header {
+            background-image: url(gambar/kebunteh.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; /*supaya gak ngulang*/
+            height: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Cinzel', serif;
+            color: whitesmoke;
+            padding: 20px;
+        }
+
+        body {
+            background-color: #F4EDE4;
+            color: #5C4737;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            font-size: 100px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 40px;
+            text-align: left;
+        }
+
+        p {
+            text-align: justify;
+            color: #5C4737;
+        }
+
+        nav ul {
+            list-style: none;
+            background-color: #5C4737;
+            display: flex;
+            padding: 10px;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        nav li {
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+        nav ul li a {
+            color: whitesmoke;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .card {
+            background: #5C4737;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        .card img {
+            color: #5C4737;
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .card p {
+            color: whitesmoke;
+        }
+        
+        footer {
+            background-color: #4A3F35;
+            justify-content: center;
+        }
+
+        footer p {
+            color: whitesmoke;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Keindahan itu bernama Bandung</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#sejarah">Sejarah</a></li>
+            <li><a href="#wisata_populer">Wisata Populer</a></li>
+            <li<a href="#budaya">Budaya</a>></li>
+        </ul>
+    </nav>    
+
+    <section id="sejarah">
+        <h2>Sejarah Kota Bandung</h2>
+        <p>
+            Selama masa pendudukan Hindia Belanda, Bandung memiliki nama resmi "Bandoeng". Dimulai pada tahun 1488 ketika VOC membuka perkebunan di daerah ini. Pada tahun 1786, VOC membangun jalan yang menghubungkan pasokan hasil perkebunan dari Batavia (sekarang Jakarta), Bogor, Cianjur, Bandung, Sumedang, dan Cirebon untuk memudahkan distribusi.<br><br>
+    
+            Pada tahun 1809, Napoleon Bonaparte — Kaisar Prancis yang menguasai sebagian besar Eropa termasuk Belanda dan koloninya — memerintahkan Gubernur Hindia Belanda, HW Daendels, untuk meningkatkan sistem pertahanan Jawa dari ancaman Inggris. Daendels pun membangun jalan sepanjang 1.000 km dari barat ke timur Jawa, yang melewati Bandung.<br><br>
+    
+            Pada tahun 1810, pemerintah Hindia Belanda membangun jalan yang kini dikenal sebagai Jalan Asia-Afrika. Di bawah perintah Daendels, Bupati Bandung R.A. Wiranatakusumah II memindahkan pusat pemerintahan dari Krapyak ke dekat Sumur Bandung — kini menjadi alun-alun kota. Di sana dibangun istana, pendopo, dan Masjid Agung Bandung.<br><br>
+    
+            Pada awal 1920-an, pemerintah kolonial Belanda berencana memindahkan ibu kota Hindia Belanda dari Batavia ke Bandung. Maka dibangunlah berbagai fasilitas seperti barak militer dan Gedung Sate. Namun, rencana ini gagal karena pecahnya Perang Dunia II.
+        </p>
+    </section>    
+
+    <section id="wisata_populer">
+        <h2>Wisata Populer</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="gambar/gedungsate.jpeg">
+                <p><strong>Gedung Sate</strong><br>
+                Gedung bersejarah yang menjadi ikon Kota Bandung, menampilkan arsitektur unik dengan ornamen tusuk sate di puncaknya.
+                </p>
+            </div>
+        
+            <div class="card">
+                <img src="gambar/Kawah putih 1.jpg">
+                <p><strong>Kawah Putih</strong><br>
+                Danau kawah dengan air berwarna putih kehijauan yang terletak di Ciwidey. Tempat ini menawarkan pemandangan alam yang menakjubkan dan suasana yang sejuk, cocok untuk relaksasi dan fotografi.
+                </p>
+            </div>
+        
+            <div class="card">
+                <img src="gambar/Cukul_Landscape_Photography_6.jpg">
+                <p><strong>Cukul Pangalengan</strong><br>
+                Terletak di kawasan Pangalengan, Cukul dikenal sebagai tempat berburu sunrise dengan lanskap perbukitan hijau dan perkebunan teh yang menyejukkan mata. Suasana pagi yang diselimuti kabut tipis membuat pengalaman di sini terasa magis dan menenangkan.
+                </p>
+            </div>
+        
+            <div class="card">
+                <img src="gambar/farmhouse.jpg">
+                <p><strong>Farmhouse Lembang</strong><br>
+                Tempat wisata keluarga yang menyuguhkan nuansa Eropa klasik, lengkap dengan rumah hobbit, kebun bunga, dan kostum tradisional Eropa yang bisa disewa untuk berfoto.
+                </p>
+            </div>
+        </div>        
+    </section>
+
+        <section id="budaya">
+            <h2>Budaya Kota Bandung</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="gambar/angklung.jpg">
+                    <p><strong>Angklung</strong><br>
+                    Alat musik tradisional yang terbuat dari bambu ini telah diakui UNESCO sebagai warisan budaya dunia. Pertunjukan angklung sering diadakan di Saung Angklung Udjo, menjadi daya tarik budaya sekaligus sarana edukasi.
+                    </p>
+                </div>
+        
+                <div class="card">
+                    <img src="gambar/kebayasunda.jpg">
+                    <p><strong>Kebaya Sunda</strong><br>
+                    Kebaya Sunda adalah busana tradisional wanita Jawa Barat yang anggun dan penuh makna. Sering digunakan dalam upacara adat seperti pernikahan atau seren taun, kebaya ini menampilkan keindahan dan kelembutan budaya Sunda.
+                    </p>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 oleh Nolanda Freeshella</p>
+    </footer>
+
+</body>
+</html>
